@@ -3,7 +3,7 @@
 <head>
 <title>Mace SMP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,10 +16,7 @@ box-sizing:border-box;
 body{
 font-family:'Orbitron',sans-serif;
 color:white;
-
-/* Background Image */
-background:url("https://images.alphacoders.com/118/1186450.jpg") no-repeat center center fixed;
-background-size:cover;
+background:url("bg.png") center/cover no-repeat fixed;
 }
 
 .overlay{
@@ -27,28 +24,31 @@ background:rgba(0,0,0,0.75);
 min-height:100vh;
 }
 
-/* Navbar */
+/* NAVBAR */
 
 nav{
 display:flex;
 justify-content:space-between;
-padding:25px 60px;
+align-items:center;
+padding:20px 60px;
 }
 
 nav h2{
 color:#00ffff;
+letter-spacing:2px;
 }
 
 nav a{
 color:white;
-margin-left:20px;
+margin-left:25px;
 text-decoration:none;
+font-size:14px;
 }
 
-/* Hero Section */
+/* HERO */
 
 .hero{
-height:85vh;
+height:80vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -59,7 +59,7 @@ text-align:center;
 .hero h1{
 font-size:90px;
 color:#00ffff;
-text-shadow:0 0 30px cyan;
+text-shadow:0 0 40px cyan;
 }
 
 .hero p{
@@ -74,7 +74,7 @@ padding:15px 40px;
 background:#00ffff;
 color:black;
 font-weight:bold;
-border-radius:10px;
+border-radius:8px;
 text-decoration:none;
 transition:0.3s;
 }
@@ -84,22 +84,22 @@ transform:scale(1.1);
 box-shadow:0 0 20px cyan;
 }
 
-/* Plugin Cards */
+/* FEATURES */
 
 .features{
 display:flex;
 justify-content:center;
 gap:40px;
-padding:80px;
+padding:80px 40px;
 flex-wrap:wrap;
 }
 
 .card{
 background:rgba(255,255,255,0.05);
 padding:30px;
-width:250px;
+width:260px;
 border-radius:12px;
-backdrop-filter:blur(6px);
+backdrop-filter:blur(5px);
 transition:0.3s;
 }
 
@@ -112,6 +112,8 @@ box-shadow:0 0 25px cyan;
 color:#00ffff;
 margin-bottom:10px;
 }
+
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -130,7 +132,7 @@ color:#aaa;
 <h2>MACE SMP</h2>
 <div>
 <a href="#">Home</a>
-<a href="#">Plugins</a>
+<a href="#">Features</a>
 <a href="#">Discord</a>
 </div>
 </nav>
@@ -140,8 +142,9 @@ color:#aaa;
 <h1>MACE SMP</h1>
 
 <p>
-Join the most powerful Minecraft SMP with custom plugins,
-wars, ranks and crazy events.
+The craziest Minecraft SMP with custom plugins like
+Corrupted SMP, Rank SMP and Altar SMP.
+Join the war and dominate the server.
 </p>
 
 <a class="btn" href="#">JOIN DISCORD</a>
@@ -152,23 +155,23 @@ wars, ranks and crazy events.
 
 <div class="card">
 <h3>⚔ Corrupted SMP</h3>
-<p>Unlock dark powers and dominate enemies.</p>
+<p>Unique corruption powers and abilities.</p>
 </div>
 
 <div class="card">
-<h3>💎 Rank SMP</h3>
-<p>Level up ranks and gain powerful perks.</p>
+<h3>💎 Rank System</h3>
+<p>Unlock powerful ranks and rewards.</p>
 </div>
 
 <div class="card">
 <h3>🔥 Altar SMP</h3>
-<p>Coming soon with ritual powers.</p>
+<p>Coming soon with crazy rituals and powers.</p>
 </div>
 
 </div>
 
 <footer>
-© 2026 Mace SMP
+© 2026 Mace SMP | All Rights Reserved
 </footer>
 
 </div>
