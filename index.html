@@ -2,103 +2,174 @@
 <html>
 <head>
 <title>Mace SMP</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-body{
+
+*{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Orbitron',sans-serif;
 color:white;
-text-align:center;
-background-image:url('https://wallpapercave.com/wp/wp2757874.jpg');
+
+/* Background Image */
+background:url("https://images.alphacoders.com/118/1186450.jpg") no-repeat center center fixed;
 background-size:cover;
-background-position:center;
-background-attachment:fixed;
 }
 
 .overlay{
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.75);
 min-height:100vh;
-padding:40px 20px;
 }
 
-h1{
-font-size:60px;
-margin-top:40px;
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:25px 60px;
 }
 
-p{
+nav h2{
+color:#00ffff;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+/* Hero Section */
+
+.hero{
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:90px;
+color:#00ffff;
+text-shadow:0 0 30px cyan;
+}
+
+.hero p{
+margin-top:20px;
 font-size:20px;
-max-width:700px;
-margin:auto;
+max-width:600px;
+}
+
+.btn{
+margin-top:35px;
+padding:15px 40px;
+background:#00ffff;
+color:black;
+font-weight:bold;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px cyan;
+}
+
+/* Plugin Cards */
+
+.features{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:80px;
+flex-wrap:wrap;
 }
 
 .card{
-background:rgba(0,0,0,0.7);
-padding:25px;
-margin:30px auto;
-max-width:500px;
-border-radius:10px;
+background:rgba(255,255,255,0.05);
+padding:30px;
+width:250px;
+border-radius:12px;
+backdrop-filter:blur(6px);
+transition:0.3s;
 }
 
-button{
-background:#2ecc71;
-border:none;
-padding:15px 25px;
-font-size:18px;
-border-radius:8px;
-cursor:pointer;
-margin-top:10px;
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px cyan;
 }
 
-button:hover{
-background:#27ae60;
+.card h3{
+color:#00ffff;
+margin-bottom:10px;
 }
 
-a{
-color:#00ffcc;
-text-decoration:none;
-font-weight:bold;
+footer{
+text-align:center;
+padding:30px;
+color:#aaa;
 }
+
 </style>
-
-<script>
-function copyIP(){
-navigator.clipboard.writeText("play.macesmp.com");
-alert("Server IP copied!");
-}
-</script>
 </head>
 
 <body>
 
 <div class="overlay">
 
+<nav>
+<h2>MACE SMP</h2>
+<div>
+<a href="#">Home</a>
+<a href="#">Plugins</a>
+<a href="#">Discord</a>
+</div>
+</nav>
+
+<div class="hero">
+
 <h1>MACE SMP</h1>
-<p>Welcome to the official website of Mace SMP. Join our Minecraft survival multiplayer server and play with an awesome community!</p>
 
-<div class="card">
-<h2>Server IP</h2>
-<p>play.macesmp.com</p>
-<button onclick="copyIP()">Copy IP</button>
-</div>
-
-<div class="card">
-<h2>Discord Community</h2>
-<p>Join our Discord server with 700+ members!</p>
-<a href="https://discord.gg/">Join Discord</a>
-</div>
-
-<div class="card">
-<h2>Server Features</h2>
 <p>
-• Survival Multiplayer 🌲<br>
-• Friendly Community 🤝<br>
-• Events & Giveaways 🎉<br>
-• Active Staff 🛡️
+Join the most powerful Minecraft SMP with custom plugins,
+wars, ranks and crazy events.
 </p>
+
+<a class="btn" href="#">JOIN DISCORD</a>
+
 </div>
 
-<p style="margin-top:40px;">© 2026 Mace SMP</p>
+<div class="features">
+
+<div class="card">
+<h3>⚔ Corrupted SMP</h3>
+<p>Unlock dark powers and dominate enemies.</p>
+</div>
+
+<div class="card">
+<h3>💎 Rank SMP</h3>
+<p>Level up ranks and gain powerful perks.</p>
+</div>
+
+<div class="card">
+<h3>🔥 Altar SMP</h3>
+<p>Coming soon with ritual powers.</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Mace SMP
+</footer>
 
 </div>
 
