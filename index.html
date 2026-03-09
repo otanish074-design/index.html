@@ -3,7 +3,8 @@
 <head>
 <title>Mace SMP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<!-- Better Gaming Font -->
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -11,13 +12,16 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:'Orbitron',sans-serif;
+font-family:'Montserrat',sans-serif;
 color:white;
-background:url("https://images7.alphacoders.com/118/1186450.jpg") center/cover fixed;
+background:url("https://wallpapercave.com/wp/wp2757874.jpg") center/cover fixed no-repeat;
 }
+
+/* DARK OVERLAY */
 
 .overlay{
 background:rgba(0,0,0,0.75);
@@ -27,18 +31,27 @@ background:rgba(0,0,0,0.75);
 
 nav{
 position:fixed;
+top:0;
 width:100%;
 display:flex;
 justify-content:space-between;
-padding:20px 60px;
-background:rgba(0,0,0,0.7);
+align-items:center;
+padding:18px 60px;
+background:rgba(0,0,0,0.85);
 z-index:1000;
+}
+
+nav h2{
+font-family:'Russo One',sans-serif;
+color:#00ffff;
+letter-spacing:2px;
 }
 
 nav a{
 color:white;
 margin-left:25px;
 text-decoration:none;
+font-weight:600;
 }
 
 nav a:hover{
@@ -54,21 +67,36 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding-top:60px;
 }
 
 .hero h1{
+font-family:'Russo One',sans-serif;
 font-size:90px;
 color:#00ffff;
 text-shadow:0 0 30px cyan;
 }
 
+.hero p{
+margin-top:20px;
+font-size:20px;
+max-width:600px;
+}
+
 .btn{
-margin-top:30px;
-padding:15px 35px;
+margin-top:35px;
+padding:15px 40px;
 background:#00ffff;
 color:black;
 border-radius:8px;
+font-weight:600;
 text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px cyan;
 }
 
 /* SECTIONS */
@@ -79,31 +107,33 @@ text-align:center;
 }
 
 section h2{
-font-size:40px;
+font-family:'Russo One';
+font-size:42px;
 color:#00ffff;
-margin-bottom:30px;
+margin-bottom:40px;
 }
 
 /* PLUGIN CARDS */
 
 .plugins{
 display:flex;
-justify-content:center;
-gap:40px;
 flex-wrap:wrap;
+justify-content:center;
+gap:35px;
 }
 
 .card{
 background:rgba(255,255,255,0.05);
 padding:30px;
-width:250px;
+width:260px;
 border-radius:10px;
+backdrop-filter:blur(6px);
+transition:0.3s;
 }
 
 .card:hover{
-box-shadow:0 0 20px cyan;
 transform:translateY(-10px);
-transition:0.3s;
+box-shadow:0 0 25px cyan;
 }
 
 /* RULES */
@@ -114,10 +144,10 @@ font-size:18px;
 }
 
 .rules li{
-margin:10px;
+margin:12px;
 }
 
-/* PLAYERS */
+/* SERVER INFO */
 
 .ip{
 font-size:30px;
@@ -131,6 +161,7 @@ footer{
 text-align:center;
 padding:40px;
 background:black;
+color:#aaa;
 }
 
 </style>
@@ -154,15 +185,18 @@ background:black;
 
 </nav>
 
-<!-- HOME -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
 <h1>MACE SMP</h1>
 
-<p>The ultimate Minecraft SMP with custom plugins and epic wars.</p>
+<p>
+The ultimate competitive Minecraft SMP with custom plugins,
+wars and powerful abilities.
+</p>
 
-<a class="btn" href="#players">Join Now</a>
+<a class="btn" href="#players">JOIN SERVER</a>
 
 </section>
 
@@ -173,13 +207,11 @@ background:black;
 <h2>Server Rules</h2>
 
 <ul>
-
 <li>No hacking or cheating</li>
 <li>No lag machines</li>
 <li>No hate speech</li>
-<li>Respect staff</li>
+<li>Respect staff and players</li>
 <li>Use common sense</li>
-
 </ul>
 
 </section>
@@ -194,17 +226,17 @@ background:black;
 
 <div class="card">
 <h3>Corrupted SMP</h3>
-<p>Gain dark powers and dominate battles.</p>
+<p>Unlock corruption abilities and dominate battles.</p>
 </div>
 
 <div class="card">
 <h3>Rank SMP</h3>
-<p>Unlock powerful ranks and abilities.</p>
+<p>Level up ranks and unlock powerful perks.</p>
 </div>
 
 <div class="card">
 <h3>Altar SMP</h3>
-<p>Coming soon with ritual mechanics.</p>
+<p>Coming soon with powerful ritual mechanics.</p>
 </div>
 
 </div>
@@ -217,15 +249,14 @@ background:black;
 
 <h2>Server Info</h2>
 
-<p>Server IP:</p>
+<p>Server IP</p>
 
 <div class="ip">
 play.macesmp.com
 </div>
 
 <p>Version: 1.21+</p>
-
-<p>Discord Community: 700+ Members</p>
+<p>Discord Community: 700+ Players</p>
 
 </section>
 
@@ -237,8 +268,8 @@ play.macesmp.com
 
 <p>
 Mace SMP is a competitive Minecraft survival multiplayer server
-focused on wars, strategy, and custom plugins.
-Join our growing community and dominate the SMP world.
+focused on wars, strategy and custom gameplay mechanics.
+Build alliances, fight enemies and become the strongest player.
 </p>
 
 </section>
