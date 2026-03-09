@@ -3,7 +3,7 @@
 <head>
 <title>Mace SMP</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,39 +16,39 @@ box-sizing:border-box;
 body{
 font-family:'Orbitron',sans-serif;
 color:white;
-background:url("bg.png") center/cover no-repeat fixed;
+background:url("https://images7.alphacoders.com/118/1186450.jpg") center/cover fixed;
 }
 
 .overlay{
 background:rgba(0,0,0,0.75);
-min-height:100vh;
 }
 
 /* NAVBAR */
 
 nav{
+position:fixed;
+width:100%;
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:20px 60px;
-}
-
-nav h2{
-color:#00ffff;
-letter-spacing:2px;
+background:rgba(0,0,0,0.7);
+z-index:1000;
 }
 
 nav a{
 color:white;
 margin-left:25px;
 text-decoration:none;
-font-size:14px;
+}
+
+nav a:hover{
+color:#00ffff;
 }
 
 /* HERO */
 
 .hero{
-height:80vh;
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -59,66 +59,78 @@ text-align:center;
 .hero h1{
 font-size:90px;
 color:#00ffff;
-text-shadow:0 0 40px cyan;
-}
-
-.hero p{
-margin-top:20px;
-font-size:20px;
-max-width:600px;
+text-shadow:0 0 30px cyan;
 }
 
 .btn{
-margin-top:35px;
-padding:15px 40px;
+margin-top:30px;
+padding:15px 35px;
 background:#00ffff;
 color:black;
-font-weight:bold;
 border-radius:8px;
 text-decoration:none;
-transition:0.3s;
 }
 
-.btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 20px cyan;
+/* SECTIONS */
+
+section{
+padding:120px 80px;
+text-align:center;
 }
 
-/* FEATURES */
+section h2{
+font-size:40px;
+color:#00ffff;
+margin-bottom:30px;
+}
 
-.features{
+/* PLUGIN CARDS */
+
+.plugins{
 display:flex;
 justify-content:center;
 gap:40px;
-padding:80px 40px;
 flex-wrap:wrap;
 }
 
 .card{
 background:rgba(255,255,255,0.05);
 padding:30px;
-width:260px;
-border-radius:12px;
-backdrop-filter:blur(5px);
-transition:0.3s;
+width:250px;
+border-radius:10px;
 }
 
 .card:hover{
+box-shadow:0 0 20px cyan;
 transform:translateY(-10px);
-box-shadow:0 0 25px cyan;
+transition:0.3s;
 }
 
-.card h3{
+/* RULES */
+
+.rules ul{
+list-style:none;
+font-size:18px;
+}
+
+.rules li{
+margin:10px;
+}
+
+/* PLAYERS */
+
+.ip{
+font-size:30px;
 color:#00ffff;
-margin-bottom:10px;
+margin:20px;
 }
 
 /* FOOTER */
 
 footer{
 text-align:center;
-padding:30px;
-color:#aaa;
+padding:40px;
+background:black;
 }
 
 </style>
@@ -129,49 +141,112 @@ color:#aaa;
 <div class="overlay">
 
 <nav>
+
 <h2>MACE SMP</h2>
+
 <div>
-<a href="#">Home</a>
-<a href="#">Features</a>
-<a href="#">Discord</a>
+<a href="#home">Home</a>
+<a href="#rules">Rules</a>
+<a href="#plugins">Plugins</a>
+<a href="#players">Players</a>
+<a href="#about">About</a>
 </div>
+
 </nav>
 
-<div class="hero">
+<!-- HOME -->
+
+<section class="hero" id="home">
 
 <h1>MACE SMP</h1>
 
+<p>The ultimate Minecraft SMP with custom plugins and epic wars.</p>
+
+<a class="btn" href="#players">Join Now</a>
+
+</section>
+
+<!-- RULES -->
+
+<section class="rules" id="rules">
+
+<h2>Server Rules</h2>
+
+<ul>
+
+<li>No hacking or cheating</li>
+<li>No lag machines</li>
+<li>No hate speech</li>
+<li>Respect staff</li>
+<li>Use common sense</li>
+
+</ul>
+
+</section>
+
+<!-- PLUGINS -->
+
+<section id="plugins">
+
+<h2>Server Plugins</h2>
+
+<div class="plugins">
+
+<div class="card">
+<h3>Corrupted SMP</h3>
+<p>Gain dark powers and dominate battles.</p>
+</div>
+
+<div class="card">
+<h3>Rank SMP</h3>
+<p>Unlock powerful ranks and abilities.</p>
+</div>
+
+<div class="card">
+<h3>Altar SMP</h3>
+<p>Coming soon with ritual mechanics.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PLAYERS -->
+
+<section id="players">
+
+<h2>Server Info</h2>
+
+<p>Server IP:</p>
+
+<div class="ip">
+play.macesmp.com
+</div>
+
+<p>Version: 1.21+</p>
+
+<p>Discord Community: 700+ Members</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Mace SMP</h2>
+
 <p>
-The craziest Minecraft SMP with custom plugins like
-Corrupted SMP, Rank SMP and Altar SMP.
-Join the war and dominate the server.
+Mace SMP is a competitive Minecraft survival multiplayer server
+focused on wars, strategy, and custom plugins.
+Join our growing community and dominate the SMP world.
 </p>
 
-<a class="btn" href="#">JOIN DISCORD</a>
-
-</div>
-
-<div class="features">
-
-<div class="card">
-<h3>⚔ Corrupted SMP</h3>
-<p>Unique corruption powers and abilities.</p>
-</div>
-
-<div class="card">
-<h3>💎 Rank System</h3>
-<p>Unlock powerful ranks and rewards.</p>
-</div>
-
-<div class="card">
-<h3>🔥 Altar SMP</h3>
-<p>Coming soon with crazy rituals and powers.</p>
-</div>
-
-</div>
+</section>
 
 <footer>
-© 2026 Mace SMP | All Rights Reserved
+
+© 2026 Mace SMP
+
 </footer>
 
 </div>
